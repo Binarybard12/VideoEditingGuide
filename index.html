@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Learn DaVinci Resolve</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        textarea {
+            display:flex;
+            width: 50%;
+            padding: 10px;
+            /* margin-bottom: 10px; */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: rgb(195, 249, 246);   
+            margin: 2vh 50vw 2vh 25vw;
+            size: 50%;
+        }
+        textarea:hover {
+            background-color: rgb(255, 255, 255);
+            padding: 15px 10px;
+            transition: 3ms
+        }
+        button {
+            margin-top: 0%;
+            background-color: rgb(52, 89, 91);
+            padding: 10px 20px;
+            cursor: pointer;   
+            color: aliceblue;
+            display: flex;
+            margin: 2vh 50vw 2vh 25vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#contents"><img src="menu.png" alt="More Icon" width="35px" height="35px" class="icon"></a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="interface.html">Interface</a></li>
+                        <li><a href="editing.html">Editing Basics</a></li>
+                        <li><a href="color-grading.html">Color Grading</a></li>
+                        <li><a href="exporting.html">Exporting</a></li>
+                        <li><a href="practice.html">Practice set</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search...">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <h1>Welcome to Your DaVinci Resolve Guide</h1>
+    </header>
+        <h2 style="text-align: center;">Contents :</h2>
+    <main>
+        <section>
+            <h2><a href="introduction.html">Introduction</a></h2>
+            <p>DaVinci Resolve is a professional video editing software used for editing, color correction, visual effects, and more. This guide will help you start your journey with step-by-step tutorials.</p>
+        </section>
+
+        <section id="interface">
+            <h2><a href="interface.html">Getting to Know the Interface</a></h2>
+            <p>The interface is divided into modules: Media, Cut, Edit, Fusion, Color, Fairlight, and Deliver. Understanding these modules is crucial to effective editing.</p>
+        </section>
+
+        <section id="editing-basics">
+            <h2><a href="editing.html">Editing Basics</a></h2>
+            <p>Learn to import media, trim clips, add transitions, and arrange your timeline for a seamless editing experience.</p>
+        </section>
+
+        <section id="color-grading">
+            <h2><a href="color-grading.html">Color Grading</a></h2>
+            <p>Discover how to use the Color page for enhancing visuals with tools like color wheels, curves, and LUTs.</p>
+        </section>
+
+        <section id="exporting">
+            <h2><a href="exporting.html">Exporting</a></h2>
+            <p>Learn to export your final project in various formats suitable for web, broadcast, or other platforms.</p>
+        </section>
+    </main>
+
+    <form><textarea class="comment-box" id="commentInput" placeholder="Write your comment here..." rows="5" ></textarea>
+        <button type="button" onclick="addComment()">Submit</button>
+        </form>
+        <script>
+            function addComment() {
+                const commentInput = document.getElementById('commentInput');
+    
+                // Get the comment text
+                const commentText = commentInput.value.trim();
+    
+                if (commentText) {
+                    // Clear the comment box
+                    commentInput.value = '';
+                } else {
+                    alert('Please write a comment before submitting.');
+                }
+            }
+        </script>
+        
+    
+
+    <footer>
+        <p>&copy; 2025 Learn DaVinci Resolve. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Material</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        video source {
+            border-bottom: 5px solid rgb(46, 83, 81);
+            align-items: flex-start;
+        }
+
+        button {
+            margin-top: 0%;
+            background-color: rgb(52, 89, 91);
+            padding: 10px 20px;
+            cursor: pointer;
+            color: aliceblue;
+            align-items: flex-start;
+            margin: 0vh 50vw 10vh 0vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#contents"><img src="menu.png" alt="More Icon" width="35px" height="35px" class="icon"></a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="interface.html">Interface</a></li>
+                        <li><a href="editing.html">Editing Basics</a></li>
+                        <li><a href="color-grading.html">Color Grading</a></li>
+                        <li><a href="exporting.html">Exporting</a></li>
+                        <li><a href="practice.html">Practice set</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search...">
+                    </form>
+                </li>
+
+                <li>
+                    <a href="#resources"><img src="resources.png" alt="resources" width="35px" height="35px"class="icon"></a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.blackmagicdesign.com/products/davinciresolve">Official
+                                DaVinci Resolve</a></li>
+                        <li><a href="https://www.youtube.com/user/BlackmagicDesignInc">Blackmagic
+                                YouTube
+                                Channel</a></li>
+                        <li><a href="https://mixinglight.com/">Mixing Light Tutorials</a></li>
+                        <li><a href="https://www.motionarray.com/davinci-resolve-templates/">Free
+                                Templates</a></li>
+                        <li><a href="https://www.premiumbeat.com/blog/davinci-resolve-tutorials/">PremiumBeat
+                                Tutorials</a></li>
+                        <li><a href="sample.html">Sample Video and Audio for practice</a></li>
+                    </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Videos:</h1>
+        <section>
+            <video controls width="20%">
+                <source src="Videos/video1.mp4" type="video/mp4" />
+            </video><a href="Videos/video1.mp4" download=""><button type="button">Download</button></a>
+
+
+            <video controls width="40%">
+                <source src="Videos/video2.mp4" type="video/mp4">
+            </video>
+            <a href="Videos/video2.mp4" download=""><button type="button">Download</button></a>
+
+            <video controls width="40%">
+                <source src="Videos/video3.mp4" type="video/mp4">
+            </video>
+            <a href="Videos/video3.mp4" download=""><button type="button">Download</button></a>
+        </section>
+
+        <h1>Audio:</h1>
+        <section>
+            <audio controls> <source src="Audios/Gemini - The Soundlings.mp3" type="audio/mp3"></audio>
+        </section>
+
+        <dialog open>
+             <p>This modal dialog has a groovy backdrop!</p>
+             <form method="dialog">
+                <button>Ok</button>
+             </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn DaVinci Resolve. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

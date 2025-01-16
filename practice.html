@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Davinci resolve Practice set</title>
+    <style>
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        details {
+            margin-bottom: 20px;
+        }
+
+        .progress-container {
+            width: 100%;
+            background: #f4f4f4;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            height: 20px;
+            width: 0%;
+            background: #4caf50;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            font-size: 0.9em;
+        }
+
+        .tasks {
+            margin-left: 20px;
+        }
+
+        .tasks input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#contents"><img src="menu.png" alt="More Icon" width="35px" height="35px" class="icon"></a>
+                    <ul class="dropdown-content">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="interface.html">Interface</a></li>
+                        <li><a href="editing.html">Editing Basics</a></li>
+                        <li><a href="color-grading.html">Color Grading</a></li>
+                        <li><a href="exporting.html">Exporting</a></li>
+                        <li><a href="practice.html">Practice set</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search...">
+                    </form>
+                </li>
+
+                <li>
+                    <a href="#resources"><img src="resources.png" alt="resources" width="35px" height="35px"class="icon"></a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.blackmagicdesign.com/products/davinciresolve">Official
+                                DaVinci Resolve</a></li>
+                        <li><a href="https://www.youtube.com/user/BlackmagicDesignInc">Blackmagic
+                                YouTube
+                                Channel</a></li>
+                        <li><a href="https://mixinglight.com/">Mixing Light Tutorials</a></li>
+                        <li><a href="https://www.motionarray.com/davinci-resolve-templates/">Free
+                                Templates</a></li>
+                        <li><a href="https://www.premiumbeat.com/blog/davinci-resolve-tutorials/">PremiumBeat
+                                Tutorials</a></li>
+                        <li><a href="sample.html">Sample Video and Audio for practice</a></li>
+                    </ul>
+            </ul>
+        </nav>
+    </header>
+    <h1>DaVinci Resolve Practice Set: Master Video Editing and Color Grading </h1>
+
+    <section>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">0%</div>
+        </div>
+
+        <details>
+            <summary>1. <strong>Video Editing Basics</strong></summary>
+            <p><strong>Objective:</strong> Familiarize with the timeline, tools, and basic editing operations.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Import a video clip into the Media Pool.</label><br>
+                <label><input type="checkbox" class="task"> Drag the clip to the timeline and trim it to 10
+                    seconds.</label><br>
+                <label><input type="checkbox" class="task"> Add a transition (e.g., Cross Dissolve) between two
+                    clips.</label><br>
+                <label><input type="checkbox" class="task"> Split a video clip into three parts and rearrange the
+                    segments.</label><br>
+            </div>
+        </details>
+
+        <details>
+            <summary>2. <strong>Working with Audio</strong></summary>
+            <p><strong>Objective:</strong> Learn audio editing, adjustments, and effects.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Import an audio track and sync it with a video
+                    clip.</label><br>
+                <label><input type="checkbox" class="task"> Adjust audio volume and add fade-in and fade-out
+                    effects.</label><br>
+                <label><input type="checkbox" class="task"> Remove background noise using the Fairlight
+                    page.</label><br>
+                <label><input type="checkbox" class="task"> Add a background music track and balance its volume with
+                    voiceovers.</label><br>
+            </div>
+        </details>
+
+        <details>
+            <summary>3. <strong>Color Correction</strong></summary>
+            <p><strong>Objective:</strong> Practice color grading and correction techniques.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Use the Color page to adjust brightness, contrast, and
+                    saturation.</label><br>
+                <label><input type="checkbox" class="task"> Apply a LUT to change the look of a video.</label><br>
+                <label><input type="checkbox" class="task"> Correct white balance for a poorly lit video.</label><br>
+                <label><input type="checkbox" class="task"> Use color wheels to create a cinematic grade.</label><br>
+            </div>
+        </details>
+
+        <details>
+            <summary>4. <strong>Adding Effects</strong></summary>
+            <p><strong>Objective:</strong> Explore Fusion and Effects Library.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Add a title using the Titles section.</label><br>
+                <label><input type="checkbox" class="task"> Create a basic text animation in Fusion.</label><br>
+                <label><input type="checkbox" class="task"> Add a blur effect to a part of the video.</label><br>
+                <label><input type="checkbox" class="task"> Use the keying tool to remove a green screen
+                    background.</label><br>
+            </div>
+        </details>
+
+        <details>
+            <summary>5. <strong>Multi-Camera Editing</strong></summary>
+            <p><strong>Objective:</strong> Learn multi-camera editing techniques.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Sync two or more video clips shot from different
+                    angles.</label><br>
+                <label><input type="checkbox" class="task"> Use the Cut page to switch between camera
+                    angles.</label><br>
+                <label><input type="checkbox" class="task"> Export the multi-cam sequence.</label><br>
+            </div>
+        </details>
+
+        <details>
+            <summary>6. <strong>Advanced Editing Techniques</strong></summary>
+            <p><strong>Objective:</strong> Gain proficiency in advanced features.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Add and animate keyframes for scaling and
+                    rotation.</label><br>
+                <label><input type="checkbox" class="task"> Create a speed ramp effect for a video clip.</label><br>
+                <label><input type="checkbox" class="task"> Use dynamic zoom for a panning effect.</label><br>
+                <label><input type="checkbox" class="task"> Mask a specific area of a video and apply an effect to
+                    it.</label><br>
+            </div>
+        </details>
+
+        <details>
+            <summary>7. <strong>Exporting</strong></summary>
+            <p><strong>Objective:</strong> Learn how to deliver the final project.</p>
+            <div class="tasks">
+                <label><input type="checkbox" class="task"> Export the video in 1080p resolution for
+                    YouTube.</label><br>
+                <label><input type="checkbox" class="task"> Export only audio as an MP3 file.</label><br>
+                <label><input type="checkbox" class="task"> Export a short clip with a transparent background using
+                    alpha channel support.</label><br>
+            </div>
+        </details>
+    </section>
+
+
+    <script>
+        const tasks = document.querySelectorAll('.task');
+        const progressBar = document.getElementById('progressBar');
+
+        tasks.forEach(task => {
+            task.addEventListener('change', () => {
+                const completedTasks = document.querySelectorAll('.task:checked').length;
+                const totalTasks = tasks.length;
+                const progress = (completedTasks / totalTasks) * 100;
+                progressBar.style.width = progress + '%';
+                progressBar.textContent = Math.round(progress) + '%';
+            });
+        });
+    </script>
+
+<footer>
+    <p>&copy; 2025 Learn DaVinci Resolve. All rights reserved.</p>
+</footer>
+</body>
+
+</html>

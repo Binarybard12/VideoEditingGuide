@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #fdae9c, #fff7a0, #7df2ff);
+    color: #171739;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #002d37;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #002d37;
+}
+
+header nav ul li {
+    margin: 0;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #bbd7ca;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+/* for nav bar */
+header nav ul li a:hover {
+    background-color: #296e6a;
+    color: white;
+}
+
+/* Dropdown Styles */
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+header nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+header nav ul li .dropdown-content li a {
+    color: #171739;
+    padding: 10px 16px;
+}
+
+header nav ul li .dropdown-content li a:hover {
+    background-color: #296e6a;
+    color: white;
+}
+
+/* Show dropdown on hover */
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Header H1 */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black, 0 0 5px #7df2ff, 0 0 25px #296e6a;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    background-color: #002d37;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('photos/DaVinci-Resolve.webp') no-repeat center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Section Styles */
+section {
+    margin: 1rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #1e403f;
+    color: #f9f9f9;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: inline;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    section {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        padding: 0.5rem;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 3px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    section {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* General Styles for Tables */
+table.custom-responsive {
+    width: 100%;
+    border: 1px solid #002d37;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table.custom-responsive caption {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #1f3d3b;
+}
+
+table.custom-responsive th, table.custom-responsive td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table.custom-responsive th {
+    background: #1a5547;
+    color: #fff;
+}
+
+table.custom-responsive tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table.custom-responsive tr:hover {
+    background: #f1f1f1;
+}
+
+/* Responsive Styles for .custom-responsive Table */
+@media (max-width: 768px) {
+    table.custom-responsive {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table.custom-responsive caption {
+        font-size: 1.2em;
+    }
+
+    table.custom-responsive thead {
+        display: table-header-group;
+    }
+
+    table.custom-responsive tr {
+        display: table-row;
+        margin: 0;
+    }
+
+    table.custom-responsive td, table.custom-responsive th {
+        display: table-cell;
+        text-align: left;
+        font-size: 0.9em;
+        padding: 10px;
+        border: 1px solid #261a1a;
+    }
+
+    table.custom-responsive td::before {
+        content: none;
+    }
+}
+
+@media (max-width: 480px) {
+    table.custom-responsive {
+        width: 100%;
+    }
+
+    table.custom-responsive caption {
+        font-size: 1em;
+    }
+
+    table.custom-responsive td, table.custom-responsive th {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    table.custom-responsive td::before {
+        content: none;
+    }
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    background: #fff;
+}
+
+a:hover {
+    color: #002d37;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Add Horizontal Scroll for Tables on Small Screens */
+.custom-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } */
+
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+
